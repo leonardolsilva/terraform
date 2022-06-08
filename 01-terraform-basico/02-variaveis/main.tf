@@ -4,8 +4,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "instancia_ec2" {
-    ami = var.instance_ami
-    instance_type = var.instance_type
+  ami           = var.instance_ami
+  instance_type = var.instance_type
 
-    tags = var.instance_tags
+  tags = var.instance_tags
 }
